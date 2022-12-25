@@ -41,7 +41,7 @@ const Home = () => {
                            </div>
                         </div>
 
-                        <div className="sub-banner position-relative">
+                        {/* <div className="sub-banner position-relative">
                            <img className="img-fluid rounded-3" src="images/whisky-editted.png" alt="sub banner" />
                            <div className="sub-banner-content position-absolute">
                               <h5>Cognac</h5>
@@ -59,16 +59,16 @@ const Home = () => {
                                  From $599.00
                               </p>
                            </div>
-                        </div>
+                        </div> */}
                      </div>
                   </div>
                </div>
             </div>
          </section>
 
-         <section className="home-wrapper-2 py-5">
-            <div className="container-xxl">
-               <div className="row">
+         {/* <section className="home-wrapper-2 py-5"> */}
+            {/* <div className="container-xxl"> */}
+               {/* <div className="row">
                   <div className="col-12">
                      <div className="service d-flex align-items-center justify-content-between">
                         <div className="d-flex align-items-center gap-15">
@@ -111,9 +111,9 @@ const Home = () => {
                         </div>
                      </div>
                   </div>
-               </div>
-            </div>
-         </section>
+               </div> */}
+            {/* </div> */}
+         {/* </section> */}
 
          <section className="home-wrapper-3 py-5">
             <div className="container-xxl">
