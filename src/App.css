@@ -243,6 +243,36 @@ footer .input-group-text {
   transition: 0.3s;
 }
 
+
+/*Home Page - Wrapper 4*/
+.home-wrapper-4 {
+  background-color: var(--color-f5f5f7);
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.swiper-banner {
+  background: var(--color-3F4038);
+}
+
+.swiper {
+  width: 100%;
+  background: var(--color-3F4038);
+
+}
+
+.swiper-slide span { 
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.swiper-slide h5 { 
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.swiper-slide h6 { 
+  font-size: 14px;
+  font-weight: 400;
 .logo{
   color: white;
   background-color: black;
