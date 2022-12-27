@@ -1,22 +1,31 @@
 import React from "react";
 import { NavLink, Link } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
-
+import {useState} from "react"
+const notHover = {background: 'white'};
+const hover = {background: "red"};
+const firstLink = 1;
+const secondLink = 2;
 const Header = () => {
+   
    return (
       <>
          <header className="header-top-strip py-3">
             <div className="container-xxl">
                <div className="row">
                   <div className="col-6">
-                     <span className="text-white mb-0">Huy Thai |</span>
-                     <span className="text-white mb-0"> Online Store</span>
+                     <a onClick={event => window.location.href="/"} id="blogpage"className="firstWeb"> Huy Thái Spirits</a>
+                     <span className="text-white">  |  </span>
+                     <a onClick={event => window.location.href="/official"} id="shoppage" class="active" className="text-white"> Huy Thái Online Store</a>
                   </div>
 
                   <div className="col-6">
                      <p className="text-end text-white mb-0">
                         <a className="text-white" href="tel+84349087318">
-                           +84349087318
+                           VN Hotline: +84349087318
+                        </a>
+                        <a className="text-white" href="tel+13062098773">
+                           CA Hotline: +13062098773
                         </a>
                      </p>
                   </div>
@@ -29,7 +38,10 @@ const Header = () => {
                <div className="row d-flex align-items-center">
                   <div className="col-2">
                      <h2>
-                        <div className="logo">
+                        <a href="/" className="logo">
+                           <p>Huy Thái Online Store</p>
+                        </a>
+                        {/* <div className="logo">
                            <Link>
                               <svg id="logo-70" width="78" height="30" viewBox="0 0 78 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                                  {" "}
@@ -43,7 +55,7 @@ const Header = () => {
                                     fill="#394149"></path>{" "}
                               </svg>
                            </Link>
-                        </div>
+                        </div> */}
                      </h2>
                   </div>
 
@@ -60,34 +72,19 @@ const Header = () => {
                      <div className="header-upper-links d-flex align-items-center justify-content-between">
                         <div>
                            <Link className="d-flex align-items-center gap-10 text-white">
-                              <img src="images/compare.svg" alt="compare" />
-                              <p className="mb-0">
-                                 Compare <br /> Products
-                              </p>
-                           </Link>
-                        </div>
-                        <div>
-                           <Link className="d-flex align-items-center gap-10 text-white">
-                              <img src="images/wishlist.svg" alt="wishlist" />
-                              <p className="mb-0">
-                                 Favorite <br /> wishlist
-                              </p>
-                           </Link>
-                        </div>
-                        <div>
-                           <Link className="d-flex align-items-center gap-10 text-white">
                               <img src="images/user.svg" alt="user" />
                               <p className="mb-0">
-                                 Login <br /> My Account
+                                 Login/ Register
                               </p>
                            </Link>
+                           
                         </div>
                         <div>
                            <Link className="d-flex align-items-center gap-10 text-white">
                               <img src="images/cart.svg" alt="cart" />
                               <div className="d-flex flex-column">
-                                 <span className="badge bg-white text-dark">0</span>
-                                 <p className="mb-0">$$$</p>
+                                 {/* <span className="badge bg-white text-dark">0</span>
+                                 <p className="mb-0">$$$</p> */}
                               </div>
                            </Link>
                         </div>
@@ -142,12 +139,8 @@ const Header = () => {
                               <NavLink className="text-white" to="/">
                                  Home
                               </NavLink>
-                              <NavLink className="text-white" to="/">
-                                 Our Store
-                              </NavLink>
-                              <NavLink className="text-white" to="/">
-                                 Blogs
-                              </NavLink>
+              
+
                               <NavLink className="text-white" to="/contact">
                                  Contact
                               </NavLink>
