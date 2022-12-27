@@ -5,19 +5,28 @@
 }
 
 :root {
-  --color-131921: #131921;
+  --color-131921: black;
   --color-3b4149: #3b4149;
-  --color-febd69: #febd69;
-  --color-232f3e: #232f3e;
+  --color-febd69: yellow;
+  --color-232f3e: black;
   --color-bf4800: #bf4800;
-  --color-f5f5f7: #f5f5f7;
+  --color-f5f5f7: #601f25;
   --color-ededed: #ededed;
   --color-777777: #777777;
   --color-1c1c1b: #1c1c1b;
 }
 
 body {
-  font-family: 'Literata', serif;
+  font-family: "Montserrat", cursive;
+}
+
+a:link { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
+a:visited { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
+a:active { COLOR: black; TEXT-DECORATION: none }
+a:hover { COLOR: white; TEXT-DECORATION: none; font-weight: none; text-underline-offset: 1; }
+
+#basic_addon2{
+  color:white;
 }
 
 a {
@@ -63,7 +72,7 @@ a {
 }
 
 .logo {
-  padding: 0px 30%;
+   left: 10000px;
 }
 
 .header-upper {
@@ -102,6 +111,10 @@ a {
   width: 100%;
   transform: translate3d(0, 57, 0);
 
+}
+
+.blogpage{
+  /* left: 10px; */
 }
 
 .header-bottom .dropdown-item {
@@ -228,4 +241,71 @@ footer .input-group-text {
   top: 15%;
   right: -30px;
   transition: 0.3s;
+}
+
+.logo{
+  color: white;
+  background-color: black;
+  width: 800px;
+  position:relative;
+  left: -19rem;
+  bottom: -8px;
+}
+
+.text-white{
+  left:-19rem;
+}
+
+.firstWeb{
+  left:-20rem;
+}
+
+#img-wrapper{
+  display:flex;
+  flex-wrap: wrap;
+}
+#img-wrapper > div {
+  flex: 0 1 33%;
+ }
+
+.head-text {
+  position: relative;
+}
+.text-on-whiskey-image {
+ position: absolute;
+ left: 90%;
+ bottom: 75%;
+ color: rgba(249, 135, 4, 0.521);
+}
+
+.text-on-vodka-image {
+  position: absolute;
+  left: 80%;
+  bottom: 75%;
+  color: white;
+ }
+
+.whiskey-text{
+  font-size: 55px;
+}
+.vodka-text{
+  font-size: 65px;
+}
+
+.head-text{
+  width: 500px;
+  height: 475px;
+}
+
+.whiskey-image{
+  width:750px;
+  height:600px;
+}
+.vodka-image{
+  width: 1500px;
+  height: 1200px;
+}
+img{
+  max-width:100%;
+  max-height:100%;
 }
