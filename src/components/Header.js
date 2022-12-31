@@ -14,9 +14,9 @@ const Header = () => {
             <div className="container-xxl">
                <div className="row">
                   <div className="col-6">
-                     <Link href = "/" className="text-white"> Huy Thái Spirits</Link>
+                     <Link href="/" className="text-white"> Huy Thái Spirits</Link>
                      <span className="text-white px-2">|</span>
-                     <Link href = "/" class="active" className="text-white"> Huy Thái Online Store</Link>
+                     <Link href="/" class="active" className="text-white"> Huy Thái Online Store</Link>
                   </div>
 
                   <div className="col-6">
@@ -41,9 +41,9 @@ const Header = () => {
                         <NavLink to="/" className="text-white text-uppercase">Huy Thái <br /> Online Store</NavLink>
                      </div>
 
-                     <div className="search input-group col">
+                     <div className="input-group col">
                         <input type="text" className="form-control" placeholder="Search Product ..." aria-label="Search Product" aria-describedby="basic-addon2" />
-                        <span class="input-group-text p-3" id="basic-addon2">
+                        <span className="input-group-text text-white p-3" id="basic-addon2">
                            <BsSearch className="fs-6" />
                         </span>
                      </div>
@@ -52,7 +52,7 @@ const Header = () => {
                   <div className="menu-bar col-6 row align-items-center text-center">
                      <div class="dropdown col-4">
                         <button class="btn btn-secondary dropdown-toggle bg-transparent align-items-center border-0 gap-15" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                           <span className="pe-3">Categories</span>
+                           <span className="pe-3">Products</span>
                         </button>
                         <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                            <li>
@@ -70,16 +70,6 @@ const Header = () => {
                                  Whisky
                               </Link>
                            </li>
-                           <li>
-                              <Link className="dropdown-item" to="">
-                                 Cognac
-                              </Link>
-                           </li>
-                           <li>
-                              <Link className="dropdown-item" to="">
-                                 Liquer
-                              </Link>
-                           </li>
                         </ul>
                      </div>
 
@@ -94,10 +84,10 @@ const Header = () => {
                      <div className="login col-2 row">
                         <Link className="text-white text-uppercase">
                            {/* <img src="images/user.svg" alt="user" /> */}
-                           <span>Login</span>
+                           <span>Account</span>
                         </Link>
                      </div>
-                     <div className="cart col-2">
+                     <div className="cart col-2 ps-4">
                         <Link>
                            <img src="images/cart.svg" alt="cart" />
                         </Link>
