@@ -7,6 +7,21 @@ const Footer = () => {
     <footer className="py-4">
       <div className="container-xxl">
         <div className='row'>
+          <div className="col-6">
+            <div className='row'>
+              <div className="footer-top-data d-flex gap-15 align-items-center">
+                <img src="images/newsletter.png" alt="newsletter" />
+                <h2 className="mb-0">Sign Up for Latest News</h2>
+              </div>
+              <div className="footer-top-input input-group">
+                <input type="text" className="form-control" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="basic-addon2" />
+                <span class="input-group-text p-2" id="basic-addon2">
+                  Subcribe
+                </span>
+              </div>
+            </div>
+          </div>
+
           <div className="col-3">
             <h4 className='text-white mb-4'>Contact Us</h4>
             <div className='footer-links d-flex flex-column'>
@@ -26,27 +41,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-
-      </div>
-      <div className="container-xxl">
-        <div className="row align-items-center">
-          <div className="col-5">
-            <div className="footer-top-data d-flex gap-30 align-items-center">
-              <h2 className="mb-0">NEWSLETTER SIGNUP</h2>
-            </div>
-
-          </div>
-          <div className="col-7">
-            <div className="input-group">
-              <input type="text" className="form-control py-2" placeholder="Your Email Address" aria-label="Your Email Address" aria-describedby="basic-addon2" />
-              <span class="input-group-text p-2" id="basic-addon2">
-                Subcribe
-              </span>
-            </div>
-          </div>
-
-        </div>
-
       </div>
     </footer>
 

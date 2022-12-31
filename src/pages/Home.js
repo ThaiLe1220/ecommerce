@@ -8,35 +8,36 @@ import { GoQuote } from "react-icons/go";
 const Home = () => {
    return (
       <>
-      <div id="img-wrapper">
-         <div className="head-text">
-            <div className="whiskey-image">
-               <img src="images/new_whiskey.jpg" />
+         {/* <div id="img-wrapper">
+            <div className="head-text">
+               <div className="whiskey-image">
+                  <img src="images/new_whiskey.jpg" />
+               </div>
+               <div className="text-on-whiskey-image">
+                  <h6 className="shop-now-text">SHOP NOW</h6>
+                  <h5 className="whiskey-text">WHISKEY</h5>
+               </div>
             </div>
-            <div className="text-on-whiskey-image">
-               <h6 className="shop-now-text">SHOP NOW</h6>
-               <h5 className="whiskey-text">WHISKEY</h5>
+            <div className="head-text">
+               <div className="vodka-image">
+                  <img src="images/vodka_image.jpg" />
+               </div>
+               <div className="text-on-vodka-image">
+                  <h6 className="shop-now-text">SHOP NOW</h6>
+                  <h5 className="vodka-text">VODKA</h5>
+               </div>
             </div>
-         </div>
-         {/* <div className="head-text">
-            <div className="vodka-image">
-               <img src="images/vodka_image.jpg" />
-            </div>
-            <div className="text-on-vodka-image">
-            <h6 className="shop-now-text">SHOP NOW</h6>
-            <h5 className="vodka-text">VODKA</h5>
+            <div className="head-text">
+               <div className="head-image">
+                  <img src="images/champagne_image.webp" />
+               </div>
+               <div className="text-on-image">
+                  <h5>CHAMPAGNE</h5>
+               </div>
             </div>
          </div> */}
-         {/* <div className="head-text">
-            <div className="head-image">
-               <img src="images/champagne_image.webp" />
-            </div>
-            <div className="text-on-image">
-               <h5>CHAMPAGNE</h5>
-            </div>
-         </div> */}
-      </div>
-         {/* <section className="home-wrapper-1 py-5">
+
+         <section className="home-wrapper-1 py-5">
             <div className="container-xxl">
                <div className="row">
                   <div className="col-6">
@@ -47,21 +48,9 @@ const Home = () => {
                         </div>
                      </div>
                   </div>
-
-                  <div className="col-6">
-                     <div className="d-flex flex-wrap gap-10 justify-content-between align-items-center">
-                        <div className="sub-banner position-relative">
-                           <img className="img-fluid rounded-3" src="images/whisky-editted.png" alt="main banner" />
-                           <div className="main-banner-content position-absolute">
-                              <h5>Whisky</h5>
-                           </div>
-                        </div>
-
-                        <div className="sub-banner position-relative">
-                           <img className="img-fluid rounded-3" src="images/whisky-editted.png" alt="main banner" />
-                           <div className="main-banner-content position-absolute">
-                              <h5>Vodka</h5>
-                           </div>
+               </div>
+            </div>
+         </section>
 
          <section className="home-wrapper-3 py-5">
             <div className="container-xxl">
