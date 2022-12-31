@@ -5,10 +5,10 @@
 }
 
 :root {
-  --color-131921: black;
+  --color-131921: #131921;
   --color-3b4149: #3b4149;
-  --color-febd69: yellow;
-  --color-232f3e: black;
+  --color-febd69: #febd69;
+  --color-232f3e: #232f3e;
   --color-bf4800: #bf4800;
   --color-f5f5f7: #601f25;
   --color-ededed: #ededed;
@@ -17,16 +17,8 @@
 }
 
 body {
-  font-family: "Montserrat", cursive;
-}
-
-a:link { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
-a:visited { COLOR: white; TEXT-DECORATION: none; font-weight: normal }
-a:active { COLOR: black; TEXT-DECORATION: none }
-a:hover { COLOR: white; TEXT-DECORATION: none; font-weight: none; text-underline-offset: 1; }
-
-#basic_addon2{
-  color:white;
+  font-family: 'Literata', serif;
+  /* font-family: "Montserrat", cursive; */
 }
 
 a {
@@ -57,7 +49,6 @@ a {
   font-size: 14px;
   padding: 15px 20px;
   border-radius: 25px;
-
 }
 
 .button:hover {
@@ -71,60 +62,49 @@ a {
   background-color: var(--color-131921);
 }
 
-.logo {
-   left: 10000px;
-}
-
 .header-upper {
   background-color: var(--color-131921);
 }
 
-.header-bottom {
-  background-color: var(--color-232f3e);
+.header-upper .menu-bar{
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
 }
 
 .header-upper .input-group-text {
   background-color: var(--color-febd69);
 }
 
-.header-upper.header-upper-links img {
-  width: 35px;
-  height: 35px;
+.header-upper .cart img{
+  width: 30px;
+  height: 30px;
 }
 
-.header-bottom .menu-links a,
-.header-bottom .dropdown button {
+.header-upper .dropdown button {
   color: white;
   font-size: 14px;
-  font-weight: 400;
-  line-height: 18px;
-  letter-spacing: 0.3;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
-.header-bottom .dropdown button:focus {
+.header-upper .dropdown button:focus {
   box-shadow: none;
 }
 
-.header-bottom .dropdown-menu {
+.header-upper .dropdown-menu {
   background-color: var(--color-131921);
-  width: 100%;
-  transform: translate3d(0, 57, 0);
-
 }
 
-.blogpage{
-  /* left: 10px; */
-}
-
-.header-bottom .dropdown-item {
+.header-upper .dropdown-item {
   color: white;
-  padding: 20px;
+  padding: 12px;
   margin-bottom: 3px;
   border-bottom: 1px solid var(--color-3b4149);
 }
 
-.header-bottom .dropdown-item:hover {
+.header-upper .dropdown-item:hover {
   color: var(--color-febd69);
   background-color: transparent;
 }
@@ -145,9 +125,19 @@ footer .input-group-text {
   padding: 8px 16px;
 }
 
+.footer-top-data{
+  padding-top: 12%;
+  padding-bottom: 4%;
+  padding-left: 16px;
+}
+
+.footer-top-input{
+  padding-left: 16px;
+  padding-right: 64px;
+}
+
 
 /*Home Page - Wrapper 1*/
-
 .main-banner-content {
   top: 15%;
   left: 5%;
@@ -243,7 +233,6 @@ footer .input-group-text {
   transition: 0.3s;
 }
 
-
 /*Home Page - Wrapper 4*/
 .home-wrapper-4 {
   background-color: var(--color-f5f5f7);
@@ -273,15 +262,18 @@ footer .input-group-text {
 .swiper-slide h6 { 
   font-size: 14px;
   font-weight: 400;
-.logo{
+}
+
+/* .logo{
   color: white;
   background-color: black;
   width: 800px;
   position:relative;
   left: -19rem;
   bottom: -8px;
-}
+} */
 
+/* 
 .text-white{
   left:-19rem;
 }
@@ -289,6 +281,7 @@ footer .input-group-text {
 .firstWeb{
   left:-20rem;
 }
+
 
 #img-wrapper{
   display:flex;
@@ -334,8 +327,4 @@ footer .input-group-text {
 .vodka-image{
   width: 1500px;
   height: 1200px;
-}
-img{
-  max-width:100%;
-  max-height:100%;
-}
+} */
